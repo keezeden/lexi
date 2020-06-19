@@ -1,6 +1,6 @@
 # Lexi
 
-A lightweight, dictionary and personal lexicon for expanding your vocabulary while reading.
+A lightweight dictionary and personal lexicon for expanding your vocabulary while reading.
 
 ## Why?
 
