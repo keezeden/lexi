@@ -4,7 +4,7 @@ A lightweight dictionary and personal lexicon for expanding your vocabulary whil
 
 ## Why?
 
-I found myself constantly being distracted by researching the meanings of words while reading academic papers/novels. This tool is meant to solve this issue by providing a tool to quickly research and record words for instant understanding and future study.
+I found myself constantly being distracted by researching the meanings of words while reading academic papers/novels. This tool is meant to solve this issue by providing a way to quickly research and understand foreign words while also saving them for future reference in hopes of adding them to your personal vocabulary.
 
 
 ## Get Started
