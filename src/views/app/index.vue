@@ -1,16 +1,16 @@
 <template>
-  <div class="flex p-12 h-screen">
-    <div class="overflow-y-auto w-1/3 p-2 px-6 m-2">
-      <p class="text-4xl text-gray-500 text-center font-medium">History</p>
-      <div class="bg-white even:bg-gray-100" :key="entry.word" v-for="entry in words">
-        <div class="p-2 px-4">
+  <div class="flex h-screen">
+    <div class="overflow-y-auto bg-gray-200 w-1/3 p-8 px-8">
+      <p class="text-4xl text-gray-800 text-center font-medium">History</p>
+      <div class :key="entry.word" v-for="entry in words">
+        <div class="p-2 px-4 my-2">
           <p class="text-xl font-medium text-gray-800 capitalize">{{entry.word}}</p>
           <p class="text-xl text-gray-600 truncate">{{entry.descriptions[0]}}</p>
         </div>
       </div>
     </div>
 
-    <div class="border-l-4 border-gray-300 w-2/3 p-2 px-12 m-2">
+    <div class="w-2/3 p-2 px-16 p-8">
       <div class="flex justify-center">
         <input
           class="outline-none text-4xl text-center font-medium"
