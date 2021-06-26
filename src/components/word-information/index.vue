@@ -1,5 +1,5 @@
 <template>
-  <div class="border border-red-400">
+  <div class="">
     <div v-for="word in definitions">
       <p>
         {{ word.name }}
@@ -15,7 +15,7 @@
 <script>
 function created() {
   this.$store.subscribe(event => {
-    const words = event.payload.slice(0, 3); // first 3 words
+    const words = event.payload.slice(0, 3); // only show first 3 words
     this.definitions = words;
   });
 }

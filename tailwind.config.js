@@ -1,10 +1,12 @@
 module.exports = {
   purge: [],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#6366F1",
+        secondary: "#818CF8"
+      }
+    }
   },
-  variants: {
-    backgroundColor: ['responsive', 'hover', 'focus', 'active', 'even']
-  },
-  plugins: [],
-}
+  plugins: []
+};

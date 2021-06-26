@@ -1,20 +1,22 @@
 <template>
   <div>
-    <p class="text-4xl text-gray-800 text-center font-medium">History</p>
-    <div :key="entry.word" v-for="entry in words">
-      <div class="p-2 px-4 my-2">
-        <p class="text-xl font-medium text-gray-800 capitalize">
+    <div
+      class="hover:bg-purple-500 rounded-lg my-2"
+      :key="entry.word"
+      v-for="entry in words"
+    >
+      <ListItem>
+        <p class="text-left text-xl">
           {{ entry.name }}
         </p>
-        <p class="text-xl text-gray-600 truncate">
-          {{ entry.definitions }}
-        </p>
-      </div>
+      </ListItem>
     </div>
   </div>
 </template>
 
 <script>
+import ListItem from "../../components/list-item";
+
 function created() {
   this.$store.subscribe(event => {
     const [word] = event.payload;
@@ -28,11 +30,19 @@ function data() {
   const words = cachedWords ? JSON.parse(cachedWords) : [];
 
   return {
-    words
+    words: [
+      { name: "Test1", definitions: ["Test definition 1"] },
+      { name: "Test2", definitions: ["Test definition 2"] },
+      { name: "Test4", definitions: ["Test definition 3"] },
+      { name: "Test3", definitions: ["Test definition 4"] }
+    ]
   };
 }
 export default {
   data,
-  created
+  created,
+  components: {
+    ListItem
+  }
 };
 </script>

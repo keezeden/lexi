@@ -1,12 +1,15 @@
 <template>
   <div class="flex h-screen">
-    <div class="overflow-y-auto bg-gray-200 w-1/3 p-8 px-8">
-      <WordHistory />
+    <div class="flex flex-col w-1/5 h-full bg-purple-600 p-12">
+      <div id="logo-spacer" class="h-24"></div>
+      <div class="my-4">
+        <WordSearch />
+      </div>
+      <div>
+        <WordHistory />
+      </div>
     </div>
-    <div>
-      <WordSearch />
-    </div>
-    <div>
+    <div class="w-4/5 h-full">
       <WordInformation />
     </div>
   </div>
