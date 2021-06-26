@@ -14,7 +14,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "tailwindcss": "^1.4.6",
+    "@heroicons/vue": "^1.0.1",
+    "heroicons": "^1.0.1",
+    "tailwindcss": "^1.6.2",
     "vue": "^2.6.11",
     "vue-hot-reload-api": "^2.3.4",
     "vuex": "^3.6.2"
