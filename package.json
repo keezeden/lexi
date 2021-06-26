@@ -1,21 +1,27 @@
 {
-  "name": "word-learner",
+  "name": "lexi",
   "version": "1.0.0",
   "description": "A lightweight, dictionary and diary for understanding new words while reading.",
-  "main": "./src/index.html",
+  "main": "index.html",
   "scripts": {
-    "start": "parcel --no-cache src/index.html"
+    "serve": "parcel --no-cache index.html",
+    "start": "env-cmd -f .env npm run serve"
   },
+  "browserslist": [
+    "last 1 Chrome version"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "tailwindcss": "^1.4.6",
     "vue": "^2.6.11",
-    "vue-hot-reload-api": "^2.3.4"
+    "vue-hot-reload-api": "^2.3.4",
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
     "@vue/component-compiler-utils": "^3.1.2",
+    "env-cmd": "^10.1.0",
     "parcel-bundler": "^1.12.4",
     "vue-template-compiler": "^2.6.11"
   }
